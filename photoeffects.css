@@ -1,0 +1,134 @@
+
+/* Default font: Dosis -- from google */
+html {
+	font-family: 'Dosis', sans-serif;
+}
+
+
+/*  Header & Menu Bar */
+#header {
+	font-family: 'Dosis', sans-serif; 
+	text-align: center; 
+	color: #7FFF00; 
+	background-color: #000000;
+    padding:10px;
+}
+
+/* Stylize links*/
+a {
+    font-family: 'Dosis', sans-serif; 
+	text-align: center; 
+	color: #7FFF00; 
+	background-color: #000000;
+    padding:1px;
+    text-decoration: none
+}
+
+/* Main content of index */
+#main_index {
+    text-align: center;
+    background-color:#ffffff;
+    float:left;
+    width: 100%;
+    padding: 100px 100px 0px 0px;
+}
+
+/* Main content of other pages */
+#main {
+    text-align: center;
+    background-color:#ffffff;
+    float:left;
+    width: 100%;
+    padding: 20px 20px 50px 0px;
+
+}
+
+/* Main content Instructions  & About */
+#main_text {
+    text-align: left;
+    background-color:#ffffff;
+    float:left;
+    border: 80px solid;
+    border-color: #ffffff;
+
+}
+
+h3 {
+    color: #7FFF00;
+    background-color: #000000;
+    padding: 4px 4px 4px 4px;
+    text-align: center;
+}
+/* Choose file for upload on main page */
+#choose_button {
+	background-color:#7FFF00;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	padding:10px 10px 10px 70px;
+	font-size: 20px;
+	text-decoration:none;
+	font-family: 'Dosis', sans-serif;
+	border: none;
+}
+
+/* Align original picture vertically */
+#orig_pic{
+    vertical-align:middle;
+}
+
+/* All buttons --> neon green squares */
+.buttons {
+	background-color:#7FFF00;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	padding: 5px 5px;
+	font-size: 15px;
+	text-decoration:none;
+	font-family: 'Dosis', sans-serif;
+	border: none;
+}
+
+
+/* Footer for all short pages */
+#footer_index {
+    font-family: 'Dosis', sans-serif;
+	text-align: center; 
+	color: #7FFF00; 
+	background: #000000;
+    padding:5px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;   /* Height of the footer */
+
+}
+
+/* footer for scrolling pages */
+#footer {
+    font-family: 'Dosis', sans-serif;
+	text-align: center; 
+	color: #000000; 
+    padding:5px;
+    width:100%;
+    height:20px;   /* Height of the footer */
+
+
+}
+
+
+/* New k-means compressed image */
+#canvas {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+
+/* K-means number of colors selection box*/
+#kmeans_k {
+      width: 40px;
+      height: 30px;
+      overflow: hidden;
+      background: #dddddd;
+    }

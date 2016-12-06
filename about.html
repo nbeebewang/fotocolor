@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="FotoColor">
+    <meta name="author" content="Nicasia Beebe-Wang">
+    <link rel="shortcut icon" href="img/camera.ico">
+    <title>FotoColor</title>
+
+	<!-- Load style sheets -->
+	<link rel="stylesheet" type="text/css" href="photoeffects.css" />
+	
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
+
+	<!-- Load any supplemental Javascript libraries here -->
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/kmeans_clustering.js"></script>
+
+	<!-- Load main javascript here -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+  </head>
+  <body>
+    <div id="header">
+  		<table style="width:100%">
+        <tbody>
+          <tr>
+           <td rowspan="3" align="left"> <a href="index.php"><font size="12">FotoColor</font></a> </td>
+           <td align="right"> <a href="index.php"><font size="3">Main</font></a> </td>
+          </tr>
+          <tr>
+           <td align="right"> <a href="about.html"><font size="3">About</font></a></td>
+          </tr>
+          <tr>
+           <td align="right"> <a href="instructions.html"><font size="3">Instructions</font></a></td>
+          </tr>
+        </tbody>
+      </table>
+  	</div>
+  	
+  	<div id="main_text"> 
+    	<h1>About</h1>
+    	<p>
+        	Fotocolor is a picture editing website that allows users to upload a picture and 
+        	select from four different editing features. For tips on using the site, and some 
+        	details on each feature, see <a href="about.html" style="background-color:#ffffff">Instructions</a>. 
+    	</p>
+    	<br>
+    	<h3> GRAYSCALE </h3>
+    	<p>
+    	    Feature: Gives the image in gray-scale.
+    	</p>
+    	<p>
+    	    How it works: Gray is made up of equal parts R, G, and B. My program iterates through 
+    	    each pixel and finds the average of the R, G, and B values, and saves new pixels with 
+    	    that average value for R, G, and B.
+    	</p>
+    	
+    	<br>
+    	<h3> COLORSELECT </h3>
+    	<p>
+    	    Feature: The users selects four colors and a new image is produced in which each pixel 
+    	    is changed to the closest of the four selected colors.
+    	</p>
+    	<p>
+    	    How it works: My program compares every pixel’s color to each of the four selected 
+    	    colors using a 3-D distance formula where R, G, and B are the three dimensions. It 
+    	    then identifies which of the user selected colors is closest to the original pixel 
+    	    color, and converts the pixel to that color.
+    	</p>
+    	<br>
+    	<h3> COLORPOP </h3>
+        <p>
+            Feature: The user selects four colors and a similarity requirement for their new image. 
+            Only colors that are within the similarity limit to a user selected color appear in the 
+            new image, while all colors that are not similar enough to any user-selected color are
+            converted to grayscale.
+            
+        </p>
+        <p>
+            How it works:  My program compares each pixel’s color to each of the four selected colors using a 3-D 
+            distance formula where R, G, and B are the three dimensions. If the original pixel is within the similarity 
+            requirement limit to any selected color, the original color is carried over to the new image. 
+            Otherwise, it is converted to gray-scale.
+  	     </p> 
+  	     <br>    
+  	     <h3> K-MEANS COMPRESSION </h3>
+        <p>
+            Feature: The users selects a number of colors between 2 and 10 to which they 
+            would like their image compressed. An image is then produced that reduces each 
+            pixel to the closest cluster’s mean.
+        </p>
+  	    <p>
+  	        How it works: The algorithm uses a cluster analysis technique where the pixels 
+  	        are grouped into the user selected number of clusters. Each pixel is then compared 
+  	        with the mean of each cluster, and then converted to the closest cluster mean. 
+  	        See the algorithm I used <a href="https://github.com/harthur/clusterfck" style="background-color:#ffffff">here</a>.
+  	    </p>
+  	    
+  	</div>
+  	
+  	<div id="footer">
+      Website created by Nicasia Beebe-Wang, CS50 2015, Harvard University
+    </div>
+  	</body>
+  </html>
+  
+  
+  
+  
+  

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="FotoColor">
+    <meta name="author" content="Nicasia Beebe-Wang">
+    <link rel="shortcut icon" href="img/camera.ico">
+    <title>FotoColor</title>
+
+	<!-- Load style sheets -->
+	<link rel="stylesheet" type="text/css" href="photoeffects.css" />
+	
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
+
+	<!-- Load any supplemental Javascript libraries here -->
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/kmeans_clustering.js"></script>
+
+	<!-- Load main javascript here -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+  </head>
+  <body>
+    <div id="header">
+  		<table style="width:100%">
+        <tbody>
+          <tr>
+           <td rowspan="3" align="left"> <a href="index.php"><font size="12">FotoColor</font></a> </td>
+           <td align="right"> <a href="index.php"><font size="3">Main</font></a> </td>
+          </tr>
+          <tr>
+           <td align="right"> <a href="about.html"><font size="3">About</font></a></td>
+          </tr>
+          <tr>
+           <td align="right"> <a href="instructions.html"><font size="3">Instructions</font></a></td>
+          </tr>
+        </tbody>
+      </table>
+  	</div>
+  	
+  
+  	<div id="main_text"> 
+    	<h1>INSTRUCTIONS</h1>
+    	<p>
+        	On the main page, there is a box for uploading an image. Once uploaded will then 
+        	be redirected to an editing page in which you can select from the four editing options. 
+        	For more information about what each feature does with your image, see <a href="about.html" style="background-color:#ffffff">About</a>. 
+    	</p>
+    	<br>
+      <h3> GRAYSCALE </h3>
+      <p>
+          Simply click the “Submit” button to the right of GRAYSCALE and a new window will 
+          open with your original image and its gray-scale version.
+      </p>
+      <br>
+      <h3> COLORSELECT </h3>
+      <p>
+          Below COLORSELECT, you will see four white boxes labeled “Color 1” to “Color 4”. 
+          If you have any specific colors in mind, you can directly enter the 6-digit hexadecimal value 
+          into the box. Otherwise, if you click on a box, a pop-up color-palette will appear where you 
+          can select a color. If you would like to select fewer than four colors, you can enter the same 
+          RGB value as multiple colors. If you would like the edited image to appear in a new tab (since 
+          you cannot return to the editing page once you’ve navigated away), try pressing “command” or 
+          “control” while you click the “Submit” button.
+      </p>
+      <br>
+      <h3> COLORPOP </h3>
+      <p>
+          See instructions for COLORSELCT. Additionally, you can choose a Similarity Requirement 
+          from a slider bar between “strict” and “lenient” values. The Similarity Requirement determines how 
+          similar pixels have to be to your selected colors in order to remain colorful, so choose a “strict” 
+          value if you’d like your edited image to be mostly gray-scale, and “lenient” if you’d like to keep 
+          most of the color.
+      </p>
+      <br>
+      <h3> K-MEANS COMPRESSION </h3>
+      <p>
+          From the drop-down menu, select the number of colors to which you’d like the 
+          algorithm to compress your image. Click “Submit” and your image will appear to the right of the 
+          original image after a brief delay. 
+      </p>
+    </div>
+
+    <div id="footer">
+      Website created by Nicasia Beebe-Wang, CS50 2015, Harvard University
+    </div>
+  	</body>
+  </html>
+ 
